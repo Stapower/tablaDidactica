@@ -1,0 +1,71 @@
+.topElement{
+	top: 50px;
+	margin: 4em auto;
+  }
+  
+  
+  ion-img {
+	object-fit: fill;
+  }
+  
+
+
+  .buttonColorAmarillo{
+	--color	: #fcf700;
+	--background : #fcf700;
+	--color-hover: #fcf700;
+	--color-hover: #afac04;
+	--background-hover-opacity: #afac04;
+	--background-hover: #afac04;
+	font-family: "Times New Roman", "Times", serif;
+//	background-image:url('https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fcolores%2Famarillo.png?alt=media&token=1436eec0-6f71-4cd3-8635-c5cdf814e838');
+//	background-size:cover;
+}
+
+.buttonColorAzul{
+	--color	: #1503bb;
+	--background : #1503bb;
+	--color-hover: #1503bb;
+	--color-hover: #010863;
+	--background-hover-opacity: #010863;
+	--background-hover: #010863;
+	font-family: "Times New Roman", "Times", serif;
+//	background-image:url('https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fcolores%2Famarillo.png?alt=media&token=1436eec0-6f71-4cd3-8635-c5cdf814e838');
+//	background-size:cover;
+}
+
+.buttonColorRojo{
+	--color	: #c70202;
+	--background : #c70202;
+	--color-hover: #c70202;
+	--color-hover: #4d1000;
+	--background-hover-opacity: #4d1000;
+	--background-hover: #4d1000;
+	font-family: "Times New Roman", "Times", serif;
+//	background-image:url('https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fcolores%2Famarillo.png?alt=media&token=1436eec0-6f71-4cd3-8635-c5cdf814e838');
+//	background-size:cover;
+}
+
+.buttonColorRosa{
+	--color	: #f104de;
+	--background : #f104de;
+	--color-hover: #f104de;
+	--color-hover: #9902a7;
+	--background-hover-opacity: #9902a7;
+	--background-hover: #9902a7;
+	font-family: "Times New Roman", "Times", serif;
+//	background-image:url('https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fcolores%2Famarillo.png?alt=media&token=1436eec0-6f71-4cd3-8635-c5cdf814e838');
+//	background-size:cover;
+}
+
+.buttonColorVerde{
+	--color	: #02a810;
+	--background : #02a810;
+	--color-hover: #02a810;
+	--color-hover: #015208;
+	--background-hover-opacity: #015208;
+	--background-hover: #015208;
+	font-family: "Times New Roman", "Times", serif;
+//	background-image:url('https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fcolores%2Famarillo.png?alt=media&token=1436eec0-6f71-4cd3-8635-c5cdf814e838');
+//	background-size:cover;
+}

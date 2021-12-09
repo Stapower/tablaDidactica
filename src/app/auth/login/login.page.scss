@@ -1,0 +1,59 @@
+	
+.spin{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+   }
+   ion-spinner {
+	width: 28px;
+	height: 28px;
+	stroke: #444;
+	fill: #222;
+   }
+  
+
+.buttonColor{
+	--color	: #050505;
+	--background : #007c34;
+	--color-hover: #014d20;
+	font-family: "Times New Roman", "Times", serif;
+}
+
+.playingYard{
+	background: url("https://i.pinimg.com/originals/52/66/81/5266819b46d6aee833ac0603bb911446.jpg");
+	//background-repeat: no-repeat;
+	//background: url('https://firebasestorage.googleapis.com/v0/b/tpclinicaonline.appspot.com/o/pictures%2Fcirugia.jpg?alt=media&token=775008e1-cdb3-4424-9cef-14e276e530fe');
+	//background-size: cover;
+	background-size: 50% 50%;
+  }
+
+
+ion-content{
+    --background: #fff url("https://previews.123rf.com/images/kankhem/kankhem1705/kankhem170500008/78757586-ni%C3%B1os-felices-saltando-juntos-durante-un-d%C3%ADa-soleado.jpg") no-repeat center center / cover;
+}
+
+
+
+/* CSS */
+.button-34 {
+  background: #6f0499;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: #1f002b 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}

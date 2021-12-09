@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true" class="playingYard">
+
+  <ion-img class="return" expand="full" (click)="back()" style="width: 10%; height: 10%;" src="  https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fdescarga%20(1).png?alt=media&token=0b88edf7-7499-40b5-8f2f-b06bcde364cc">
+  </ion-img>
+
+  <div class="fab-container">
+    <div class="fab fab-icon-holder">
+      <ion-img *ngIf = "selectedCountry == 'por'" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" ></ion-img>
+      <ion-img *ngIf = "selectedCountry == 'eng'" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" ></ion-img>
+      <ion-img *ngIf = "selectedCountry == 'esp'" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1536px-Flag_of_Spain.svg.png"></ion-img>
+    </div>
+    <ul class="fab-options">
+        <ion-img  (click)="selectFlag('por')" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" ></ion-img>
+        <ion-img  (click)="selectFlag('eng')" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" ></ion-img>
+        <ion-img  (click)="selectFlag('esp')" color="medium" style="width: 60px; height: 60px; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1536px-Flag_of_Spain.svg.png"></ion-img>
+    </ul>
+  </div>
+
+  <ion-img *ngIf= "!topic" class="topElement" expand="full" (click)="selectTopic('colores')" color="medium" style="width: 100%; height: 27%;" src="https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fpaleta_colores.png?alt=media&token=3d132284-9820-4537-a58e-fba01ce23758">
+  </ion-img>  
+  <ion-img  *ngIf= "!topic" expand="full" (click)="selectTopic('numeros')" color="medium" style="width: 100%; height: 27%; display: inline-block;" src="https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fnumeros.png?alt=media&token=fbc2fb9d-3d27-45ec-b4e0-e6f63671e56b">    
+  </ion-img>
+  <ion-img *ngIf= "!topic" expand="full" (click)="selectTopic('animales')" color="medium" style="width: 100%; height: 27%; display: inline-block;" src="https://firebasestorage.googleapis.com/v0/b/pps1-251a8.appspot.com/o/assets%2Fanimales%20(1).png?alt=media&token=53761104-9f7e-44de-96c6-c7bc85a97c2b">    
+  </ion-img>
+
+
+  <app-animales *ngIf= "topic == 'animales'" (reproducirSonido)="playAudio($event)"></app-animales>
+  <app-color *ngIf= "topic == 'colores'" (reproducirSonido)="playAudio($event)"></app-color>
+  <app-numeros *ngIf= "topic == 'numeros'" (reproducirSonido)="playAudio($event)"></app-numeros>
+
+
+
+</ion-content>
